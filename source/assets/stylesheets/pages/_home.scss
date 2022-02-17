@@ -21,29 +21,42 @@
   color: white;
 }
 .experiences {
-  max-width: 900px;
+  max-width: 750px;
   margin: 0 auto;
   padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-a.logo-links:hover {
-  text-decoration: none;
-}
 .experience-card {
-  display: block;
-  width: 100px;
-  margin: 5px 5px;
-}
-.experience-icon {
-  width: 100px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 5px;
+  width: 150px;
+  height: 100px;
+  margin: 5px 5px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.experience-card img {
+  max-height: 80px;
+  max-width: 80px;
   margin-bottom: 5px;
+  box-shadow: none;
+}
+.experience-card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.experience-card a:hover {
+  text-decoration: none;
 }
 .bg-methode {
   background-color: $orange;
@@ -68,17 +81,6 @@ a.logo-links:hover {
 }
 .bg-biologie {
   background-color: $green;
-}
-.experience-text {
-  text-align: center;
-}
-.expe {
-  color: white;
-  font-size: 16px !important;
-  font-weight: 600 !important;
-  width: 100%;
-  text-transform: uppercase;
-  margin-bottom: 0px;
 }
 .banner-sciences {
   height: 300px;

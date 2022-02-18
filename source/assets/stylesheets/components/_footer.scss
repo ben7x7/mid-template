@@ -7,22 +7,15 @@ footer {
 }
 .footer-header {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 15px;
-}
-.legales-links {
-  color: $light-gray;
-  width: inherit;
+  display: grid;
 }
 .legales-links a {
   color: $light-gray;
 }
 .copyright {
   width: 100%;
-  text-align: right;
-  font-size: 14px;
-  color: $light-gray;
+  text-align: center;
+  font-size: 12px;
+  color: #7e7a7a;
 }
 

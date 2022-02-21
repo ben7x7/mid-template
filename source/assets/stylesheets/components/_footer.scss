@@ -1,16 +1,45 @@
 // Your footer style
-footer {
+.footer {
+  display: grid;
   background-color: black;
   width: 100%;
-  min-height: 10vh;
-  padding: 30px 5px;
+  height: auto;
+  padding: 10px 10px;
 }
 .footer-header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0px;
   width: 100%;
   display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3,1fr);
 }
-.legales-links a {
+.legales-links,
+.experiences-links {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+}
+.legales-links a,
+.experiences-links a,
+.legales-links p,
+.experiences-links p {
+  position: relative;
   color: $light-gray;
+}
+.legales-links p::before,
+.experiences-links p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 60px;
+  background-color: $marine;
+}
+#hide {
+  color: black;
 }
 .copyright {
   width: 100%;
@@ -19,3 +48,16 @@ footer {
   color: #7e7a7a;
 }
 
+
+@media screen and (max-width: 578px){
+  .footer-header {
+    grid-template-columns: 1fr;
+  }
+  #hide {
+    display: none;
+  }
+  .legales-links,
+  .experiences-links {
+    margin-left: 60px;
+  }
+}

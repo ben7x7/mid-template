@@ -53,7 +53,7 @@
 
     <%= yield %>
 
-    <footer>
+    <footer class="footer">
       <div class="footer-header">
         <div class="legales-links">
           <p>Mentions Légales</p>
@@ -63,11 +63,13 @@
         </div>
         <div class="experiences-links">
           <p>Expériences</p>
-          <%= link_to "Auteur", '/auteur.html', class: 'footer-link' %>
           <%= link_to "Méthode", '/methode.html', class: 'footer-link' %>
           <%= link_to "Eau", '/eau.html', class: 'footer-link' %>
           <%= link_to "Electricité", '/electricite.html', class: 'footer-link' %>
           <%= link_to "Ondes", '/ondes.html', class: 'footer-link' %>
+        </div>
+        <div class="experiences-links">
+          <p id="hide">Experiences</p>
           <%= link_to "Magnétisme", '/magnetisme.html', class: 'footer-link' %>
           <%= link_to "Métaux", '/metaux.html', class: 'footer-link' %>
           <%= link_to "Cristaux", '/cristaux.html', class: 'footer-link' %>
@@ -75,7 +77,7 @@
         </div>
       </div>
       <div class="copyright">
-        ©SourcierAmateur 2021
+        ©SourcierAmateur2022 | Designed by Ben7x7
       </div>
     </footer>
 

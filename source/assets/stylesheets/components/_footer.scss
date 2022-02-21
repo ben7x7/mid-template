@@ -12,7 +12,6 @@
   padding: 50px 0px;
   width: 100%;
   display: grid;
-  gap: 1rem;
   grid-template-columns: repeat(3,1fr);
 }
 .legales-links,
@@ -27,6 +26,7 @@
 .experiences-links p {
   position: relative;
   color: $light-gray;
+  font-size: 16px !important;
 }
 .legales-links p::before,
 .experiences-links p::before {
@@ -52,6 +52,9 @@
 @media screen and (max-width: 578px){
   .footer-header {
     grid-template-columns: 1fr;
+  }
+  .experiences-links p {
+    margin-top: 2.5rem;
   }
   #hide {
     display: none;

@@ -42,3 +42,6 @@ def run_linter(command)
     system command
   end
 end
+
+# Ensure builds are skipped when pushing to the gh-pages branch
+ENV["COMMIT_MESSAGE_SUFFIX"] = "[skip ci]"
